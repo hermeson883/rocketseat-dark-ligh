@@ -1,0 +1,48 @@
+:root{
+    --black: #000000;
+    --dark-theme: #292C35;
+    --light-theme: #F1F1F1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--dark-theme);
+    transition: 0.5s;
+}
+
+button{
+    padding: 4px 3px 4px 3px;
+    border-radius: 59px;
+    background: var(--black);
+    cursor: pointer;
+    border: none;
+    outline:none;
+}
+
+.center.light{
+    background: var(--light-theme);
+}
+
+.icons{
+    width: 4.825rem;
+    transition: 0.5s;
+}
+
+.animation{
+    position: relative;
+}
+
+#switcher-light{
+    transform: translateX(-100%);
+}
+
+#switcher-dark{
+    transform: translateX(100%);
+}
